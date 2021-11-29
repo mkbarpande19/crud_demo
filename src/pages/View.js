@@ -1,6 +1,6 @@
 import React from 'react'
 
-function View() {
+const View = () => {
     return (
         <div>
             <h2>View Page Here</h2>

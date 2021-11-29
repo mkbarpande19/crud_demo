@@ -1,6 +1,6 @@
 import React from 'react'
 
-function AddEdit() {
+const AddEdit = () => {
     return (
         <div>
             <h2>add edit here</h2>
