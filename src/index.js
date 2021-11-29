@@ -7,7 +7,7 @@ import { ToastProvider } from "react-toast-notifications";
 
 ReactDOM.render(
   <React.StrictMode>
-    <ToastProvider autoDismiss={true}>
+    <ToastProvider autoDismiss={true} autoDismissTimeout={3000}>
       <App />
     </ToastProvider>
   </React.StrictMode>,
