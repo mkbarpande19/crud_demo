@@ -35,7 +35,7 @@ const Home = () => {
     // Function defined to get data from firestore database of firebase
     const getData = async() =>{
         const querySnapshot = await getDocs(collection(db, "contacts"));
-       setData(querySnapshot.docs.map((doc)=>({...doc.data(), id: doc.id }))); // setting the response with the id
+        if(querySnapshot.docs.length) setData(querySnapshot.docs.map((doc)=>({...doc.data(), id: doc.id }))); // setting the response with the id
     }
 
     return (
