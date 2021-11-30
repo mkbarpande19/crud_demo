@@ -29,6 +29,7 @@
     color: #DADDFC;
     padding: 5px;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .btn_delete{
@@ -36,10 +37,12 @@
     color: #DADDFC;
     padding: 5px;
     border-radius: 8px;
+    cursor: pointer;
 }
 .btn_view{
     background-color: #2C272E;
     color: #DADDFC;
     padding: 5px;
     border-radius: 8px;
+    cursor: pointer;
 }
