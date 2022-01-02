@@ -1,6 +1,6 @@
 # CRUD Project
 
-This is a simple project with basic functionalities to create,read,update and delete bootstrapped with [Create React App (https://github.com/facebook/create-react-app.
+This is a simple project with basic functionalities to create,read,update and delete bootstrapped with [Create React App (https://github.com/facebook/create-react-app)].
 
 ### HOME Page 
 Home page shows the list of the contacts
