@@ -10,7 +10,7 @@ const Header = () => {
     useEffect(() => {
         if(location.pathname === "/") setActiveTab("Home");
         else if(location.pathname === "/add") setActiveTab("AddContact");
-        else if(location.pathname.includes("update")) setActiveTab("AddContact");
+        else if(location.pathname.includes("update") || location.pathname.includes("view")) setActiveTab("AddContact");
         else if (location.pathname === "/about") setActiveTab("About");
     }, [location]);
     
@@ -31,7 +31,7 @@ const Header = () => {
                         className={`${activeTab==="AddContact" ? "active" : ""}`}
                         onClick={()=> setActiveTab('AddContact')}
                     >
-                        Add Contact
+                        {location.pathname.includes("view") ? "Contact Details" :"Add Contact"}
                     </p>
                 </Link>
                 <Link to="/about">

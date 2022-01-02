@@ -14,7 +14,7 @@ const initialState = {
     contact:""
 }
 
-const AddEdit = () => {
+const AddEdit = ({isView}) => {
 
     const [state, setState] = useState(initialState);
     const [data, setData] = useState({});
@@ -111,7 +111,8 @@ const AddEdit = () => {
             >
                 <Form.Group className="mb-3" controlId="formName">
                     <Form.Label for="name">Name</Form.Label>
-                    <Form.Control 
+                    <Form.Control
+                        disabled = {isView}
                         type="text" 
                         autoComplete="off"
                         id="name"
@@ -124,7 +125,8 @@ const AddEdit = () => {
                
                 <Form.Group className="mb-3" controlId="formEmail">
                     <Form.Label for="email">E-Mail</Form.Label>
-                    <Form.Control 
+                    <Form.Control
+                        disabled = {isView}
                         type="email" 
                         autoComplete="off"
                         id="email"
@@ -137,7 +139,8 @@ const AddEdit = () => {
 
                 <Form.Group className="mb-3" controlId="formContact">
                     <Form.Label for="contact">Contact</Form.Label>
-                    <Form.Control 
+                    <Form.Control
+                        disabled = {isView}
                         type="number" 
                         id="contact"
                         name="contact"
@@ -147,7 +150,8 @@ const AddEdit = () => {
                     />
                 </Form.Group>  
 
-                <Button className="btn_save" type="submit">{!id ? "SAVE" : "UPDATE"}</Button>
+               {!isView && <Button className="btn_save" type="submit">{!id ? "SAVE" : "UPDATE"}</Button>}
+               {isView && <Button className='btn_save' type="button" onClick={()=>{navigate('../', { replace: true })}}>BACK</Button>}
             </Form> 
         </div>
     )

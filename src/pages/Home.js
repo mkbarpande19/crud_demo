@@ -67,7 +67,7 @@ const Home = () => {
                                     <div className="btn_delete" onClick={()=>{deleteFunction(data[i].id)}}>Delete</div>
                                 </div>
                                 <div style={{width:"120px"}}>
-                                        <Link to={`/view/${data[i].id}}`} style={{ textDecoration: 'none' }}>
+                                        <Link to={`/view/${data[i].id}`} style={{ textDecoration: 'none' }}>
                                             <div className="btn_view"> View </div>
                                         </Link>
                                 </div>
