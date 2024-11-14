@@ -55,9 +55,9 @@ const Home = () => {
                 {Object.keys(data).map((i)=>{
                         return(
                             <div key={data[i].id} className="containerWrapper">
-                                <div style={{width:"150px", textAlign:"left"}}>{data[i].name}</div>
-                                <div style={{width:"150px", textAlign:"left"}}>{data[i].email}</div>
-                                <div style={{width:"150px", textAlign:"left"}}>{data[i].contact}</div>
+                                <div style={{width:"150px", textAlign:"left", wordWrap: "break-word"}}>{data[i].name}</div>
+                                <div style={{width:"150px", textAlign:"left", wordWrap: "break-word"}}>{data[i].email}</div>
+                                <div style={{width:"150px", textAlign:"left", wordWrap: "break-word"}}>{data[i].contact}</div>
                                 <div style={{width:"120px"}}>
                                     <Link to={`/update/${data[i].id}`} style={{ textDecoration: 'none' }}>
                                         <div className="btn_edit">Edit</div>
